@@ -52,7 +52,7 @@ header {
 
 #navLinks ul li a {
   text-decoration: none;
-  padding: 10px 20px ;
+  padding: 10px 20px;
 }
 
 #navLinks li a:hover {
@@ -69,28 +69,35 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-#navContact:hover {
-  background-color: orange;
-  padding: 15px 30px;
-  margin-inline: 10px;
+@media (hover: hover) and (pointer: fine) {
+  #navContact:hover {
+    background-color: orange;
+  }
 }
+
+/* --------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 880px) {
   header {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: -103px;
   }
 
   #navLinks {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    width: 100%;
   }
   #navLinks ul {
+    justify-content: space-between;
     order: 1;
   }
 
   #navContact {
+    width: 30%;
+    margin-left: 35%;
     order: 0;
   }
 }
