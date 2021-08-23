@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.mainLogo {
+  display: block;
+  text-align: center;
+  height: 400px;
+  width: 50%;
+  margin-left: 25%;
+  padding: 0;
+  transition: all 0.35s cubic-bezier(0.79, -0.46, 0.35, 1.35);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mainLogo:hover {
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+    transition: all 0.75s cubic-bezier(0.79, -0.46, 0.35, 1.35);
+  }
+}
+
+.welcomeMessage {
+  margin-top: 10px;
+  white-space: nowrap;
+  color: lightblue;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+  margin-inline: 10%;
+  border: 10px solid darkblue;
+  padding: 0;
+  animation: text 1.5s 1s linear backwards;
+}
+
+.welcomeMessage div {
+  color: yellow;
+  animation: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@keyframes text {
+  0% {
+    color: black;
+    border: 0px solid lightblue;
+    margin-top: 100px;
+    letter-spacing: 10px;
+  }
+
+  100% {
+    letter-spacing: inherit;
+  }
+}
+
+/* _____________________________________________________________________________________________________________________ */
+
+@media screen and (max-width: 1000px) {
+  .welcomeMessage {
+    margin-top: 10px;
+    white-space: nowrap;
+    color: lightblue;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    margin-inline: 10%;
+    border: 10px solid darkblue;
+    padding: 0;
+    animation: textMedium 1.5s 1s linear backwards;
+  }
+}
+
+@keyframes textMedium {
+  0% {
+    color: black;
+    border: 0px solid lightblue;
+    margin-top: 100px;
+    letter-spacing: 7px;
+  }
+
+  100% {
+    letter-spacing: inherit;
+  }
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+@media screen and (max-width: 940px) {
+  .mainLogo {
+    display: block;
+    text-align: center;
+    height: 300px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 0;
+    transition: all 0.35s cubic-bezier(0.79, -0.46, 0.35, 1.35);
+  }
+
+  .welcomeMessage {
+    margin-top: 100px;
+    white-space: unset;
+    color: lightblue;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    margin-inline: 5%;
+    border: 10px solid darkblue;
+    padding: 0;
+    animation: textSmall 1.5s 1s linear backwards;
+  }
+
+  @keyframes textSmall {
+    0% {
+      color: black;
+      border: 0px solid lightblue;
+      margin-top: 100px;
+      letter-spacing: 5px;
+    }
+
+    100% {
+      letter-spacing: inherit;
+    }
+  }
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+
+@media screen and (max-width: 700px) {
+  .mainLogo {
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    height: 250px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+    transition: all 0.35s cubic-bezier(0.79, -0.46, 0.35, 1.35);
+  }
+
+  .welcomeMessage {
+    margin-top: 100px;
+    white-space: unset;
+    color: lightblue;
+    text-align: center;
+    font-family: monospace;
+    font-size: 10px;
+    margin-inline: 5%;
+    border: 10px solid darkblue;
+    padding: 0;
+    animation: textSmall 1.5s 1s linear backwards;
+  }
+
+  @keyframes textSmall {
+    0% {
+      color: black;
+      border: 0px solid lightblue;
+      margin-top: 200px;
+      letter-spacing: 4px;
+    }
+
+    100% {
+      letter-spacing: inherit;
+    }
+  }
+}
+
+/* ________________________________________________________________________________________________________________________________ */
