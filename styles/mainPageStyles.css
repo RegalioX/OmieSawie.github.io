@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 #loading {
   /* position: fixed ; */
@@ -19,6 +22,7 @@
 
 .bodyOfPage {
   background-image: url(../images/backgroundImage.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
 }
@@ -38,19 +42,17 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  background:
-  radial-gradient(
-    rgb(212, 210, 224),blue
-    );
+  background: radial-gradient(rgb(212, 210, 224), blue);
   align-items: center;
   border-bottom: 10px skyblue solid;
-  padding: 10px 20px;
+  padding: 10px 30px 20px 30px;
 }
 
 #mainLogo {
   cursor: pointer;
   width: 150px;
   height: 100px;
+  box-shadow: -10px 10px 10px darkblue;
 }
 
 #navLinks {
@@ -66,9 +68,11 @@ header {
 
 #navLinks ul li a {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 5px 5px;
+  margin-inline: 10px;
   color: black;
   font-size: 1.2em;
+  box-shadow: 10px 10px 10px darkblue;
 }
 
 #navLinks li a:hover {
@@ -78,11 +82,12 @@ header {
 #navContact {
   padding: 10px 20px;
   margin-inline: 20px;
-  background-color: red;
+  background-color: skyblue;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  box-shadow: 10px 10px 10px darkblue;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -95,29 +100,42 @@ header {
   display: grid;
   margin: 20px 5% 20px 5%;
   border: 10px solid lightblue;
-  border-radius: 100px;
+  border-radius: 50px;
+  transition: transform 0.5s;
+  /* animation: 3s timing-function 0.5 1; */
 }
-section .introduction {
-  position: relative;
-  border: 10px solid lightblue;
-  border-radius: 100px;
+
+@media (hover: hover) and (pointer: fine) {
+  .introduction:hover {
+    transform: translate3d(0px,10px,0px);
+    box-shadow: 10px 10px 10px cyan;
+  }
 }
 
 #introductionText {
-  background-color: lightcyan;
+  background: linear-gradient(
+    rgba(224, 255, 255, 1),
+    rgba(0, 255, 255,1),
+    rgba(224, 255, 255, 0.95)
+  );
   padding: 40px;
   z-index: 1;
 }
 
 .label {
-  padding: 30px 20px;
+  padding: 30px 20px 40px 20px;
   margin: 0px;
   color: aliceblue;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
   background-color: blue;
-
+  border-radius: 40px 40px 0px 0px;
+  background: linear-gradient(
+    rgba(0, 0, 255, 1),
+    rgba(100, 100, 255, 1),
+    rgba(224, 255, 255, 0.1)
+  );
   position: sticky;
   top: -25px;
   z-index: 2;
@@ -126,12 +144,17 @@ section .introduction {
 #introductionButtonExploreMore {
   padding: 100px 20px 40px 20px;
   color: blue;
+  border: 0px;
+  border-radius: 0px 0px 40px 40px;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  background-color: cyan;
+  background: linear-gradient(
+    rgba(224, 255, 255, 0.1),
+    rgba(224, 255, 255, 0.9)
+  );
   position: sticky;
-  bottom: 200px;
+  bottom: 250px;
   z-index: 0;
 }
 
@@ -144,6 +167,11 @@ section .introduction {
     position: sticky;
     top: -103px;
     z-index: 99999;
+    padding: 10px 5px 10px 5px;
+    margin-inline: 0px;
+  }
+  #mainLogo {
+    box-shadow: 0px 10px 10px darkblue;
   }
 
   #navLinks {
@@ -154,12 +182,20 @@ section .introduction {
   #navLinks ul {
     justify-content: space-between;
     order: 1;
+    padding-bottom: 20px;
+    box-shadow: 0px 10px 10px darkblue;
+  }
+  #navLinks ul li a {
+    box-shadow: 0px 10px 10px darkblue;
+    margin-inline: 10%;
   }
 
   #navContact {
-    width: 30%;
-    margin-left: 35%;
+    margin: 20px auto 20px auto;
+    width: 35%;
+
     order: 0;
+    box-shadow: 0px 10px 10px darkblue;
   }
 
   .label {
