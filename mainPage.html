@@ -18,7 +18,7 @@
     </script>
 
     <header>
-      <img id="mainLogo" src="/images/mainLogo.png" alt="Nakshatra Main Logo" />
+      <img id="mainLogo" src="/images/mainLogo.png" alt="CEF Main Logo" />
       <nav id="navLinks">
         <ul>
           <li><a href="">Projects</a></li>
@@ -32,9 +32,69 @@
       </nav>
     </header>
 
+    <!-- ---------------------------------------------Image Slideshow--------------------------------------------------------------->
     <div class="bodyOfPage">
+    <section id="slideshow">
+      <div class="slideshowSlide animationFade" style="display: block;">
+        <div class="slideshowImageText">
+          <h1>Image 1</h1>
+          <p>this will be the writeup for image 1.</p>
+        </div>
+        <img class="slideshowImage" id="image_1" src="/DronePics/image_1.jpg" alt="image_1" />
+      </div>
+      <div class="slideshowSlide animationFade">
+        <div class="slideshowImageText">
+          <h1>Image 2</h1>
+          <p>this will be the writeup for image 2.</p>
+        </div>
+        <img class="slideshowImage" id="image_2" src="/DronePics/image_2.jpg" alt="image_2" />
+      </div>
+      <div class="slideshowSlide animationFade">
+        <div class="slideshowImageText">
+          <h1>Image 3</h1>
+          <p>this will be the writeup for image 3.</p>
+        </div>
+        <img class="slideshowImage" id="image_3" src="/DronePics/image_3.jpg" alt="image_3" />
+      </div>
+      <div class="slideshowSlide animationFade">
+        <div class="slideshowImageText">
+          <h1>Image 4</h1>
+          <p>this will be the writeup for image 4.</p>
+        </div>
+        <img class="slideshowImage" id="image_4" src="/DronePics/image_4.jpg" alt="image_4" />
+      </div>
+      <div class="slideshowSlide animationFade">
+        <div class="slideshowImageText">
+          <h1>Image 5</h1>
+          <p>this will be the writeup for image 5.</p>
+        </div>
+        <img class="slideshowImage" id="image_5" src="/DronePics/image_5.jpg" alt="image_5" />
+      </div>
+      <div class="slideshowSlide animationFade">
+        <div class="slideshowImageText">
+          <h1>Image 6</h1>
+          <p>this will be the writeup for image 6.</p>
+        </div>
+        <img class="slideshowImage" id="image_6" src="/DronePics/image_6.jpg" alt="image_6" />
+      </div>
+
+      <a id="previousImageButton" onclick="incrimentSlides(-1)">&#10094;</a>
+      <a id="nextImageButton" onclick="incrimentSlides(1)">&#10095;</a>
+
+      <div class="dotsbox" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </section>
+
+    <!-- <div class="bodyOfPage"> -->
       <section>
         <p>
+          This will be the start of th texxt.<br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
           asperiores sequi magnam nisi sint? Alias sit laborum id, similique
           porro aperiam natus odio perspiciatis hic saepe esse nobis beatae
@@ -229,36 +289,47 @@
       soluta laudantium et dolore? Pariatur neque alias rerum porro velit ex
       eveniet quam dolores possimus sequi, mollitia numquam, laborum non
       delectus ullam.<br /><br />
+
+      <br /><br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Doloribus dolorum ut, cumque error saepe odit magnam, porro omnis rem unde
+      tempora nesciunt temporibus corporis dolorem quo fuga incidunt
+      exercitationem facere? Sequi tempora excepturi alias possimus ab
+      voluptates, atque voluptate molestias odio, maiores, accusantium expedita
+      nostrum deleniti perspiciatis porro magni autem enim! Adipisci ad impedit
+      exercitationem quas! Vitae accusamus illum, dolorum animi odio voluptas
+      exercitationem, maxime aliquam iusto consequuntur laboriosam possimus
+      repellat reprehenderit est veniam, tenetur veritatis repudiandae cum
+      soluta laudantium et dolore? Pariatur neque alias rerum porro velit ex
+      eveniet quam dolores possimus sequi, mollitia numquam, laborum non
+      delectus ullam.<br /><br />
+
+      <br /><br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Doloribus dolorum ut, cumque error saepe odit magnam, porro omnis rem unde
+      tempora nesciunt temporibus corporis dolorem quo fuga incidunt
+      exercitationem facere? Sequi tempora excepturi alias possimus ab
+      voluptates, atque voluptate molestias odio, maiores, accusantium expedita
+      nostrum deleniti perspiciatis porro magni autem enim! Adipisci ad impedit
+      exercitationem quas! Vitae accusamus illum, dolorum animi odio voluptas
+      exercitationem, maxime aliquam iusto consequuntur laboriosam possimus
+      repellat reprehenderit est veniam, tenetur veritatis repudiandae cum
+      soluta laudantium et dolore? Pariatur neque alias rerum porro velit ex
+      eveniet quam dolores possimus sequi, mollitia numquam, laborum non
+      delectus ullam.<br /><br />
+
+      <br /><br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Doloribus dolorum ut, cumque error saepe odit magnam, porro omnis rem unde
+      tempora nesciunt temporibus corporis dolorem quo fuga incidunt
+      exercitationem facere? Sequi tempora excepturi alias possimus ab
+      voluptates, atque voluptate molestias odio, maiores, accusantium expedita
+      nostrum deleniti perspiciatis porro magni autem enim! Adipisci ad impedit
+      exercitationem quas! Vitae accusamus illum, dolorum animi odio voluptas
+      exercitationem, maxime aliquam iusto consequuntur laboriosam possimus
+      repellat reprehenderit est veniam, tenetur veritatis repudiandae cum
+      soluta laudantium et dolore? Pariatur neque alias rerum porro velit ex
+      eveniet quam dolores possimus sequi, mollitia numquam, laborum non
+      delectus ullam.<br /><br />
     </div>
+    <script src="/logicScript/javaOmie.js"></script>
+
   </body>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on("click", function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            800,
-            function () {
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            }
-          );
-        } // End if
-      });
-    });
-  </script>
 </html>
