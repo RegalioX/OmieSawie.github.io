@@ -24,7 +24,8 @@ html {
 
 #slideshow {
   /* background-color: blue; */
-  padding-top: 40px;
+  padding: 40px 0px 100px 0px;
+  margin: 0px 0px 200px 0px;
   /* margin: 10px 50px 100px 50px; */
   /* height: 100%; */
   width: 100%;
@@ -200,66 +201,63 @@ html {
   border-color: gray;
 }
 
-
-
-
-
-
-@media screen and (max-width: 880px){
-	.slideshowSlide{
-		height: 500px;
-	}
-	.slideshowImageText{
-		letter-spacing: 2px;
-		line-height: 25px;
-		bottom: 10%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-animation-name: posi2;
-		-webkit-animation-duration: 2s;
-		animation-name: posi2;
-		animation-duration: 2s;
-	}
-
-	@-webkit-keyframes posi2 {
-	  from {bottom: 0%;}
-	  to {bottom: 10%;}
-	}
-
-
-	@keyframes posi2 {
-	  from {bottom: 0px;}
-	  to {bottom: 10%;}
-	}
-
-	.slideshowImageText h1{
-		font-size: 40px;
-	}
-	.slideshowImageText p{
-		font-size: 15px;
-	}
-
-}
-
-@media screen and (max-width: 520px){
-	.slideshowImageText h1{
-		font-size: 30px;
-		margin-bottom: 20px;
-	}
-  .dotsbox{
-    bottom: 10px;
+@media screen and (max-width: 880px) {
+  .slideshowSlide {
+    height: 500px;
+  }
+  .slideshowImageText {
+    letter-spacing: 2px;
+    line-height: 25px;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: posi2;
+    -webkit-animation-duration: 2s;
+    animation-name: posi2;
+    animation-duration: 2s;
   }
 
+  @-webkit-keyframes posi2 {
+    from {
+      bottom: 0%;
+    }
+    to {
+      bottom: 10%;
+    }
+  }
+
+  @keyframes posi2 {
+    from {
+      bottom: 0px;
+    }
+    to {
+      bottom: 10%;
+    }
+  }
+
+  .slideshowImageText h1 {
+    font-size: 40px;
+  }
+  .slideshowImageText p {
+    font-size: 15px;
+  }
 }
 
-
-
-
+@media screen and (max-width: 520px) {
+  .slideshowImageText h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .dotsbox {
+    bottom: 10px;
+  }
+}
 
 /* ---------------------------------------------------------End of Slideshow----------------------------------------------------------------- */
 
 .bodyOfPage {
-  background-image: url(../images/backgroundImage.jpg);
+  /* background-image: url(../images/backgroundImage.jpg); */
+  background: radial-gradient(rgb(212, 210, 224), rgb(0, 0, 255));;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -333,9 +331,9 @@ header {
   }
 }
 
-.introduction {
+.writeupBlock {
   display: grid;
-  margin: 20px 5% 20px 5%;
+  margin: 20px 5% 150px 5%;
   border: 10px solid lightblue;
   border-radius: 50px;
   transition: transform 0.5s;
@@ -343,13 +341,13 @@ header {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .introduction:hover {
+  .writeupBlock:hover {
     transform: translate3d(0px, 10px, 0px);
     box-shadow: 10px 10px 10px cyan;
   }
 }
 
-#introductionText {
+.writeupBlockText {
   background: linear-gradient(
     rgba(224, 255, 255, 1),
     rgba(0, 255, 255, 1),
@@ -378,7 +376,7 @@ header {
   z-index: 2;
 }
 
-#introductionButtonExploreMore {
+.writeupBlockButtonExploreMore {
   padding: 100px 20px 40px 20px;
   color: blue;
   border: 0px;
