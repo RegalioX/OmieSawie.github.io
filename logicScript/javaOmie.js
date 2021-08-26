@@ -1,3 +1,5 @@
+"use strict";
+
 const slideshowSlide = document.querySelectorAll(".slideshowSlide");
 
 const dot = document.querySelectorAll(".dot");
@@ -49,22 +51,42 @@ function slideFun(n) {
 
 // --------------------------------------------------------------------------------------------------------------------------------
 
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     var x = document.getElementsByClassName("writeupBlock");
+//     var
+
+//     if (entry.isIntersecting) {
+//       entry.target.x[1].classList.add("writeupBlock-animation");
+//       return; // if we added the class, exit the function
+//     }
+
+//     // We're not intersecting, so remove the class!
+//     entry.target.x[1].classList.remove(x[1]);
+//   });
+// });
+
+// observer.observe(document.getElementsByClassName('animationStabalizer'));
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    const writeupBlock = entry.target.querySelector(".writeupBlock");
+    const square = entry.target;
 
     if (entry.isIntersecting) {
-      writeupBlock.classList.add("writeupBlock-animation");
+      square.classList.add("writeupBlock-animation");
       return; // if we added the class, exit the function
     }
 
     // We're not intersecting, so remove the class!
-    writeupBlock.classList.remove("writeupBlock-animation");
+    square.classList.remove("writeupBlock-animation");
   });
 });
 
-observer.observe(document.querySelector(".animationStabalizer"));
-
+observer.observe(document.querySelectorAll(".writeupBlock")[0]);
+observer.observe(document.querySelectorAll(".writeupBlock")[1]);
+observer.observe(document.querySelectorAll(".writeupBlock")[2]);
+observer.observe(document.querySelectorAll(".writeupBlock")[3]);
+observer.observe(document.querySelectorAll(".writeupBlock")[4]);
 
 // ---------------------------------------------------------------------------------------------------------------------------
 
@@ -80,3 +102,12 @@ observer.observe(document.querySelector(".animationStabalizer"));
 // });
 
 // observer.observe(document.querySelector('.writeupBlock'));
+
+// const sectionOme = document.querySelector("section-1");
+// const options = { } ;
+// const observer = new IntersectionObserver(function (enteries, observer) {
+//   enteries.forEach(entry=>{
+//     console.log(entry);
+//   })
+// },
+// options);

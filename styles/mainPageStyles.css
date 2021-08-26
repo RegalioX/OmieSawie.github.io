@@ -344,19 +344,18 @@ header {
   border-radius: 50px;
 }
 
-@keyframes wipe-enter {
+@keyframes fade-enter {
   0% {
-    transform: scale(0, 1.5);
+    opacity: 0;
+    transform: scale(.9);
   }
-  50% {
-    transform: scale(1, 1);
+  100% {
+    opacity: 1;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .writeupBlock-animation {
-    animation: wipe-enter 1.5s 1;
-  }
+.writeupBlock-animation {
+  animation: fade-enter 1s 1;
 }
 
 @media (hover: hover) and (pointer: fine) {
