@@ -46,3 +46,37 @@ function slideFun(n) {
   slideshowSlide[counter - 1].style.display = "block";
   dot[counter - 1].className += " active";
 }
+
+// --------------------------------------------------------------------------------------------------------------------------------
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const writeupBlock = entry.target.querySelector(".writeupBlock");
+
+    if (entry.isIntersecting) {
+      writeupBlock.classList.add("writeupBlock-animation");
+      return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    writeupBlock.classList.remove("writeupBlock-animation");
+  });
+});
+
+observer.observe(document.querySelector(".animationStabalizer"));
+
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
+// const observer = new IntersectionObserver(entries => {
+//   // Loop over the entries
+//   entries.forEach(entry => {
+//     // If the element is visible
+//     if (entry.isIntersecting) {
+//       // Add the animation class
+//       entry.target.classList.add('writeupBlock-animation');
+//     }
+//   });
+// });
+
+// observer.observe(document.querySelector('.writeupBlock'));

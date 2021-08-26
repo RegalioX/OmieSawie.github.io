@@ -87,7 +87,7 @@ html {
     rgba(100, 100, 255, 1),
     rgba(100, 100, 255, 0.3)
   ); */
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @keyframes stylishTranslate {
@@ -342,8 +342,21 @@ header {
   border: 10px solid lightblue;
   background-color: cyan;
   border-radius: 50px;
-  transition: transform 0.5s;
-  /* animation: 3s timing-function 0.5 1; */
+}
+
+@keyframes wipe-enter {
+  0% {
+    transform: scale(0, 1.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .writeupBlock-animation {
+    animation: wipe-enter 1.5s 1;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
