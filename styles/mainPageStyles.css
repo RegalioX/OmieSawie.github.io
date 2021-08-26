@@ -82,11 +82,12 @@ html {
   -webkit-animation-name: stylishTranslate;
   -webkit-animation-duration: 2s;
   z-index: 1;
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgba(100, 100, 255, 0.3),
     rgba(100, 100, 255, 1),
     rgba(100, 100, 255, 0.3)
-  );
+  ); */
+  background-color: rgba(0,0,0,0.5);
 }
 
 @keyframes stylishTranslate {
@@ -257,7 +258,8 @@ html {
 
 .bodyOfPage {
   /* background-image: url(../images/backgroundImage.jpg); */
-  background: radial-gradient(rgb(212, 210, 224), rgb(0, 0, 255));;
+  /* background: radial-gradient(rgb(212, 210, 224), rgb(0, 0, 255));; */
+  background-color: whitesmoke;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -278,7 +280,9 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  background: radial-gradient(rgb(212, 210, 224), blue);
+  background: #8aab8f;
+  /* background: radial-gradient(rgb(212, 210, 224), blue); */
+  /* background: radial-gradient(lightgray,gray); */
   align-items: center;
   padding: 10px 30px 20px 30px;
 }
@@ -287,7 +291,7 @@ header {
   cursor: pointer;
   width: 150px;
   height: 100px;
-  box-shadow: -10px 10px 10px darkblue;
+  box-shadow: -5px 5px 5px darkblue;
 }
 
 #navLinks {
@@ -307,7 +311,8 @@ header {
   margin-inline: 10px;
   color: black;
   font-size: 1.2em;
-  box-shadow: 10px 10px 10px darkblue;
+  box-shadow: 5px 5px 5px #7c827c;
+  border-radius: 50px;
 }
 
 #navLinks li a:hover {
@@ -322,7 +327,7 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  box-shadow: 10px 10px 10px darkblue;
+  box-shadow: 5px 5px 5px darkblue;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -335,6 +340,7 @@ header {
   display: grid;
   margin: 20px 5% 150px 5%;
   border: 10px solid lightblue;
+  background-color: cyan;
   border-radius: 50px;
   transition: transform 0.5s;
   /* animation: 3s timing-function 0.5 1; */
@@ -348,11 +354,12 @@ header {
 }
 
 .writeupBlockText {
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgba(224, 255, 255, 1),
     rgba(0, 255, 255, 1),
     rgba(224, 255, 255, 0.95)
-  );
+  ); */
+  background-color: cyan;
   padding: 40px;
   z-index: 1;
 }
@@ -365,12 +372,12 @@ header {
   font-size: 1.5em;
   font-weight: bold;
   background-color: blue;
-  border-radius: 40px 40px 0px 0px;
-  background: linear-gradient(
+  border-radius: 40px 40px 40px 40px;
+  /* background: linear-gradient(
     rgba(0, 0, 255, 1),
     rgba(100, 100, 255, 1),
     rgba(224, 255, 255, 0.1)
-  );
+  ); */
   position: sticky;
   top: -25px;
   z-index: 2;
