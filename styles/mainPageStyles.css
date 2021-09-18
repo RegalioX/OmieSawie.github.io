@@ -118,6 +118,7 @@ html {
 .slideshowImageText p {
   color: white;
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .slideshowImage {
@@ -259,7 +260,7 @@ html {
 .bodyOfPage {
   /* background-image: url(../images/backgroundImage.jpg); */
   /* background: radial-gradient(rgb(212, 210, 224), rgb(0, 0, 255));; */
-  background-color: whitesmoke;
+  background-color: #e9ffdb;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -291,7 +292,7 @@ header {
   cursor: pointer;
   width: 150px;
   height: 100px;
-  box-shadow: -5px 5px 5px darkblue;
+  /*box-shadow: -5px 5px 5px darkblue;*/
 }
 
 #navLinks {
@@ -309,10 +310,11 @@ header {
   text-decoration: none;
   padding: 5px 5px;
   margin-inline: 10px;
-  color: black;
+  color: #D3e8d6;
   font-size: 1.2em;
-  box-shadow: 5px 5px 5px #7c827c;
-  border-radius: 50px;
+  box-shadow: 3px 3px #7c827c;
+  border-radius: 20px;
+  background: #242e25;
 }
 
 #navLinks li a:hover {
@@ -327,7 +329,7 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  box-shadow: 5px 5px 5px darkblue;
+  box-shadow: 5px 5px 5px #7C827C;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -339,8 +341,8 @@ header {
 .writeupBlock {
   display: grid;
   margin: 20px 5% 150px 5%;
-  border: 10px solid lightblue;
-  background-color: cyan;
+  border: 10px solid #7c827c;
+  background-color: #D3e8d6;
   border-radius: 50px;
 }
 
@@ -358,12 +360,12 @@ header {
   animation: fade-enter 1s 1;
 }
 
-@media (hover: hover) and (pointer: fine) {
+/*@media (hover: hover) and (pointer: fine) {
   .writeupBlock:hover {
     transform: translate3d(0px, 10px, 0px);
     box-shadow: 10px 10px 10px cyan;
   }
-}
+}*/
 
 .writeupBlockText {
   /* background: linear-gradient(
@@ -371,7 +373,9 @@ header {
     rgba(0, 255, 255, 1),
     rgba(224, 255, 255, 0.95)
   ); */
-  background-color: cyan;
+  font-family: 'Roboto';
+  font-size: 1.15em;
+  background-color: #D3e8d6;
   padding: 40px;
   z-index: 1;
 }
@@ -381,10 +385,11 @@ header {
   margin: 0px;
   color: aliceblue;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
-  background-color: blue;
+  background-color: #242e25;
   border-radius: 40px 40px 40px 40px;
+  font-family: 'Roboto';
   /* background: linear-gradient(
     rgba(0, 0, 255, 1),
     rgba(100, 100, 255, 1),
@@ -397,7 +402,7 @@ header {
 
 .writeupBlockButtonExploreMore {
   padding: 100px 20px 40px 20px;
-  color: blue;
+  color: #242e25;
   border: 0px;
   border-radius: 0px 0px 40px 40px;
   text-align: center;
