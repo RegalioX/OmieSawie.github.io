@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CES Website</title>
     <link rel="stylesheet" href="/styles/ContactUsStyles.css" />
+
+    <!-- linking Navbar and footer CSS styles file -->
+    <link rel="stylesheet" href="/styles/NavbarFooter.css" />
   </head>
   <body onload="myPreloader()">
     <div id="loading"></div>
@@ -191,7 +194,42 @@
 
     <section>Links</section>
 
-    <footer class="footer">This will be the footer.</footer>
+    <footer class="footer">
+      <div class="footerContainer">
+        <div class="row">
+          <div class="footer-col">
+            <h4>CEF</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>IIT Bhubaneswar</h4>
+            <ul>
+              <li><a href="#">Main Website</a></li>
+              <li><a href="#">School of Infrastructure</a></li>
+              <li><a href="#">Map</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="/logicScript/javaOmie.js"></script>
   </body>
 </html>

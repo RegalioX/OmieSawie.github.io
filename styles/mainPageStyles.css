@@ -257,89 +257,7 @@ html {
 
 /* ---------------------------------------------------------End of Slideshow----------------------------------------------------------------- */
 
-.bodyOfPage {
-  /* background-image: url(../images/backgroundImage.jpg); */
-  /* background: radial-gradient(rgb(212, 210, 224), rgb(0, 0, 255));; */
-  background-color: #d5e0eb;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-}
 
-section {
-  margin: 10px;
-}
-
-li,
-a {
-  font-size: 16px;
-  font-weight: 500;
-  color: lightblue;
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  background: #97caef;
-  /* background: radial-gradient(rgb(212, 210, 224), blue); */
-  /* background: radial-gradient(lightgray,gray); */
-  align-items: center;
-  padding: 10px 30px 20px 30px;
-}
-
-#mainLogo {
-  cursor: pointer;
-  width: 150px;
-  height: 100px;
-  /*box-shadow: -5px 5px 5px darkblue;*/
-}
-
-#navLinks {
-  list-style: none;
-  display: block;
-}
-
-#navLinks ul {
-  display: inline-flex;
-  list-style: none;
-  padding: 10px 20px;
-}
-
-#navLinks ul li a {
-  text-decoration: none;
-  padding: 5px 5px;
-  margin-inline: 10px;
-  color: lightblue;
-  font-size: 1.2em;
-  box-shadow: 3px 3px #7c827c;
-  border-radius: 20px;
-  background: blue;
-}
-
-#navLinks li a:hover {
-  color: yellow;
-}
-
-#navContact {
-  padding: 10px 20px;
-  margin-inline: 20px;
-  background-color: red;
-  color: black;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  box-shadow: 5px 5px 5px #7c827c;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  #navContact:hover {
-    background-color: orange;
-  }
-}
-
-/* --------------------------------End of Navbar----------------------------------------------------------------------------------------------------------------------------- */
 
 .writeupBlock {
   display: grid;
@@ -350,13 +268,13 @@ header {
 }
 
 .writeupBlock-animation {
-  animation: fade-enter 1s 1;
+  animation: fade-enter 2s 1;
 }
 
 @keyframes fade-enter {
   0% {
     opacity: 0;
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
   }
   100% {
     opacity: 1;
@@ -377,9 +295,9 @@ header {
     rgba(224, 255, 255, 0.95)
   ); */
   font-family: "Roboto";
-  font-size: 1.15em;
+  font-size: 1.5em;
   background-color: rgb(173, 196, 230);
-  border-radius: 30px;
+  border-radius: 30px 30px 0px 0px;
   padding: 40px;
   z-index: 1;
 }
@@ -409,7 +327,7 @@ header {
   font-weight: bold;
   background: linear-gradient(rgb(220, 220, 230), rgb(173, 196, 230));
   position: sticky;
-  bottom: 250px;
+  bottom: 150px;
   z-index: 0;
 }
 
@@ -417,7 +335,8 @@ header {
   background: rgb(173, 196, 230);
 }
 
-/* --------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------End of Body------------------------------------------------------------------------ */
+
 
 @media screen and (max-width: 880px) {
   header {
