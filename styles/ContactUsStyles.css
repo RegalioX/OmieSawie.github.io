@@ -23,7 +23,7 @@ html {
 .bodyOfPage {
   /* background-image: url(../images/backgroundImage.jpg); */
   /* background: radial-gradient(rgb(212, 210, 224), rgb(0, 0, 255));; */
-  background-color: #e9ffdb;
+  background-color: #d5e0eb;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -37,14 +37,14 @@ li,
 a {
   font-size: 16px;
   font-weight: 500;
-  color: lightgrey;
+  color: lightblue;
   text-decoration: none;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  background: #8aab8f;
+  background: #97caef;
   /* background: radial-gradient(rgb(212, 210, 224), blue); */
   /* background: radial-gradient(lightgray,gray); */
   align-items: center;
@@ -73,11 +73,11 @@ header {
   text-decoration: none;
   padding: 5px 5px;
   margin-inline: 10px;
-  color: #d3e8d6;
+  color: lightblue;
   font-size: 1.2em;
   box-shadow: 3px 3px #7c827c;
   border-radius: 20px;
-  background: #242e25;
+  background: blue;
 }
 
 #navLinks li a:hover {
@@ -87,7 +87,8 @@ header {
 #navContact {
   padding: 10px 20px;
   margin-inline: 20px;
-  background-color: skyblue;
+  background-color: red;
+  color: black;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -100,14 +101,19 @@ header {
     background-color: orange;
   }
 }
-.contactSection{
- margin-top: 250px;
+
+/* __________________________________________________________________________________________________________________________________________________________ */
+
+.contactSection {
+  margin: 20px;
+  margin-bottom: 300px;
 }
 
 .contactGroup {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-bottom: 200px;
 }
 
 .individualContactFlexBox {
@@ -115,10 +121,14 @@ header {
   flex-direction: row;
   width: auto;
   margin: 20px;
-  padding: 20px;
-  border: 10px solid #7c827c;
-  background-color: #d3e8d6;
+  padding: 5px;
+  border: 10px solid rgb(138, 138, 245);
+  background-color: rgb(173, 196, 230);
   border-radius: 20px;
+}
+
+.writeupBlock-animation {
+  animation: fade-enter 1s 1;
 }
 
 @keyframes fade-enter {
@@ -131,10 +141,6 @@ header {
   }
 }
 
-.contactSection-animation {
-  animation: fade-enter 1s 1;
-}
-
 /*@media (hover: hover) and (pointer: fine) {
   .contactSection:hover {
     transform: translate3d(0px, 10px, 0px);
@@ -145,26 +151,25 @@ header {
 .contactInfo {
   font-family: "Roboto";
   font-size: 1.15em;
-  background-color: #d3e8d6;
-  padding: 40px;
-  z-index: 1;
+  background-color: rgb(173, 196, 230);
+  padding: 10px;
+}
+
+.profileImage {
+  width: 100px;
+  height: auto;
 }
 
 .label {
   padding: 30px 20px 40px 20px;
   margin: 0px;
-  color: aliceblue;
+  color: lightblue;
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  background-color: #242e25;
+  background-color: darkblue;
   border-radius: 40px 40px 40px 40px;
   font-family: "Roboto";
-  /* background: linear-gradient(
-    rgba(0, 0, 255, 1),
-    rgba(100, 100, 255, 1),
-    rgba(224, 255, 255, 0.1)
-  ); */
   position: sticky;
   top: -25px;
   z-index: 2;
