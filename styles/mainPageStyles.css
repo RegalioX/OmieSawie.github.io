@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -33,6 +32,7 @@ html {
   /* overflow: hidden; */
   /* display: block; */
   position: relative;
+  overflow-x: hidden;
 }
 
 .slideshowSlide {
@@ -272,6 +272,37 @@ html {
   .dotsbox {
     bottom: 10px;
   }
+
+  .slideshowImage {
+    transform: scale(1.5, 1.5);
+    animation-name: zoom-in;
+    animation-duration: 20s;
+    -webkit-animation-name: zoom-in;
+    -webkit-animation-duration: 20s;
+    border: 10px solid white;
+    max-height: 100%;
+    max-width: unset;
+
+    display: block;
+    overflow-x: hidden;
+  }
+
+  @keyframes zoom-in {
+    from {
+      transform: translatex(0);
+    }
+    to {
+      transform: translatex(-50%);
+    }
+  }
+  @-webkit-keyframes zoom-in {
+    from {
+      transform: translatex(0);
+    }
+    to {
+      transform: translatex(-50%);
+    }
+  }
 }
 
 /* ---------------------------------------------------------End of Slideshow----------------------------------------------------------------- */
@@ -394,38 +425,5 @@ html {
 
   .label {
     top: 45px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .slideshowImage {
-    transform: scale(1.5, 1.5);
-    animation-name: zoom-in;
-    animation-duration: 20s;
-    -webkit-animation-name: zoom-in;
-    -webkit-animation-duration: 20s;
-    border: 10px solid white;
-    max-height: 100%;
-    max-width: unset;
-
-    display: block;
-    overflow-x: hidden;
-  }
-
-  @keyframes zoom-in {
-    from {
-      transform: translatex(0);
-    }
-    to {
-      transform: translatex(-50%);
-    }
-  }
-  @-webkit-keyframes zoom-in {
-    from {
-      transform: translatex(0);
-    }
-    to {
-      transform: translatex(-50%);
-    }
   }
 }
