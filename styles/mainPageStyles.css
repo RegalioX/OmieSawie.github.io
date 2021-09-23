@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -134,6 +135,7 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 
 /* @keyframes zoom-in {
@@ -404,8 +406,7 @@ html {
     -webkit-animation-duration: 20s;
     border: 10px solid white;
     max-height: 100%;
-  max-width: unset;
-  
+    max-width: unset;
 
     display: block;
     overflow-x: hidden;
