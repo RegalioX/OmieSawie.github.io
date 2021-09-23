@@ -160,3 +160,47 @@ ul {
 }
 
 /* -----------------------End of Footer------------------------------------------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 880px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: -188px;
+    z-index: 99999;
+    padding: 10px 5px 0px 5px;
+    margin-inline: 0px;
+  }
+  #mainLogo {
+    box-shadow: 0px 10px 10px darkblue;
+  }
+
+  #navLinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #navLinks ul {
+    justify-content: space-between;
+    order: 1;
+    padding-bottom: 20px;
+    box-shadow: 0px 10px 10px darkblue;
+  }
+  #navLinks ul li a {
+    box-shadow: 0px 10px 10px darkblue;
+    margin-inline: 10%;
+  }
+
+  #navContact {
+    margin: 20px auto 20px auto;
+    width: 35%;
+
+    order: 0;
+    box-shadow: 0px 10px 10px darkblue;
+  }
+
+  .label {
+    top: 45px;
+  }
+}
