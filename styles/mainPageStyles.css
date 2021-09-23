@@ -129,7 +129,7 @@ html {
   -webkit-animation-duration: 40s;
   border: 10px solid white;
   max-height: 100%;
-  /* max-width: 100%; */
+  max-width: 90%;
 
   display: block;
   margin-left: auto;
@@ -395,16 +395,17 @@ html {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .slideshowImage {
     transform: scale(1.5, 1.5);
     animation-name: zoom-in;
-    animation-duration: 40s;
+    animation-duration: 20s;
     -webkit-animation-name: zoom-in;
-    -webkit-animation-duration: 40s;
+    -webkit-animation-duration: 20s;
     border: 10px solid white;
     max-height: 100%;
-    /* max-width: 100%; */
+  max-width: unset;
+  
 
     display: block;
     overflow-x: hidden;
@@ -415,7 +416,7 @@ html {
       transform: translatex(0);
     }
     to {
-      transform: translatex(-100%);
+      transform: translatex(-50%);
     }
   }
   @-webkit-keyframes zoom-in {
@@ -423,7 +424,7 @@ html {
       transform: translatex(0);
     }
     to {
-      transform: translatex(-100%);
+      transform: translatex(-50%);
     }
   }
 }
