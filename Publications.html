@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CEF Website</title>
+    <link rel = "icon" href ="/images/mainLogo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="/styles/Project.css" />
+    <link rel="stylesheet" href="/styles/mainPageStyles.css" />
+
+
+    <!-- linking Navbar and footer CSS styles file -->
+    <link rel="stylesheet" href="/styles/NavbarFooter.css" />
+  </head>
+  <body onload="myPreloader()">
+    <div id="loading"></div>
+
+    <script>
+      var preloader = document.getElementById("loading");
+      function myPreloader() {
+        preloader.style.display = "none";
+      }
+    </script>
+
+<header>
+  <img
+    id="mainLogo"
+    src="/images/mainLogo.png"
+    alt="CEF Main Logo"
+    onclick="window.location.href='index.html'"
+  />
+  <div id="nametitle" onclick="window.location.href='index.html'"><p>CIVIL ENGINEERING FORUM</p></div>
+
+  <nav id="navLinks">
+    <!--<ul>
+      <li><a href="contactUs.html">Projects</a></li>
+      <li><a href="">Blogs</a></li>
+      <li><a href="">Academics</a></li>
+      <li><a href="">Vision</a></li>
+    </ul>-->
+    <ul>
+      <li>
+        <a href="Events.html">
+        Events
+        </a>
+      </li>
+      <li>
+        <a href="Publications.html">
+        Publications
+        </a>
+      </li>
+      <li><a href="Projects.html">
+        Projects
+        </a>
+      </li>
+      <li><a href="contactUs.html">
+        Contacts
+        </a></li>
+  </ul>
+  </nav>
+
+</header>
+
+    <div class="bodyOfPage">
+      <section class="contactSection writeupBlock" id="Publications">
+        <h1 class="label">Publications</h1>
+        <container class="contactGroup writeupBlock"><a href="#">
+          <container class="individualContactFlexBox">
+            <img
+              class="profileImage"
+              src="/images/OmkarSawant.jpg"
+              alt="OmkarSawant Photo"
+            />
+            <p class="contactInfo">
+              <b style="font-size: 1.5em; font-weight: 2em"> P 1 </b>
+              <br />
+              Description
+            </p>
+          </container></a>
+          <container class="contactGroup writeupBlock"><a href="#">
+            <container class="individualContactFlexBox">
+              <img
+                class="profileImage"
+                src="/images/OmkarSawant.jpg"
+                alt="OmkarSawant Photo"
+              />
+              <p class="contactInfo">
+                <b style="font-size: 1.5em; font-weight: 2em"> P 1 </b>
+                <br />
+                Description
+              </p>
+            </container></a>
+            <container class="contactGroup writeupBlock"><a href="#">
+              <container class="individualContactFlexBox">
+                <img
+                  class="profileImage"
+                  src="/images/OmkarSawant.jpg"
+                  alt="OmkarSawant Photo"
+                />
+                <p class="contactInfo">
+                  <b style="font-size: 1.5em; font-weight: 2em"> P 1 </b>
+                  <br />
+                  Description
+                </p>
+              </container></a>
+              <container class="contactGroup writeupBlock"><a href="#">
+                <container class="individualContactFlexBox">
+                  <img
+                    class="profileImage"
+                    src="/images/OmkarSawant.jpg"
+                    alt="OmkarSawant Photo"
+                  />
+                  <p class="contactInfo">
+                    <b style="font-size: 1.5em; font-weight: 2em"> P 1 </b>
+                    <br />
+                    Description
+                  </p>
+                </container></a>
+                </container>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footerContainer">
+        <div class="row">
+          <div class="footer-col">
+            <h4>CEF</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>IIT Bhubaneswar</h4>
+            <ul>
+              <li><a href="https://www.iitbbs.ac.in/" target="blank" >IIT BBS</a></li>
+              <li><a href="https://www.iitbbs.ac.in/Infrastructure-home.php?code=if" target="blank"">School of Infrastructure</a></li>
+              <li><a href="https://goo.gl/maps/dsJjPfS57hmJhQA46" target="blank">Map</a></li>
+              <!-- <li><a href="#"></a></li> -->
+              <!-- <li><a href="#">FAQ</a></li> -->
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="https://m.facebook.com/110035601516317/"><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+              <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="/logicScript/javaOmie.js"></script>
+  </body>
+</html>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CES Website</title>
+    <title>CEF Website</title>
+    <link rel = "icon" href ="/images/mainLogo.png" type = "image/x-icon">
     <link rel="stylesheet" href="/styles/mainPageStyles.css" />
 
     <!-- linking Navbar and footer CSS styles file -->
@@ -16,7 +17,7 @@
     <script>
       var preloader = document.getElementById("loading");
       function myPreloader() {
-        preloader.style.display = "none";
+        preloader.style.display = "none"; 
       }
     </script>
 
@@ -27,17 +28,30 @@
         alt="CEF Main Logo"
         onclick="window.location.href='index.html'"
       />
+      <div id="nametitle" onclick="window.location.href='index.html'"><p>CIVIL ENGINEERING FORUM</p></div>
+    
       <nav id="navLinks">
         <ul>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Blogs</a></li>
-          <li><a href="">Academics</a></li>
-          <li><a href="">Vision</a></li>
+        <li>
+          <a href="Events.html">
+          Events
+          </a>
+        </li>
+        <li>
+          <a href="Publications.html">
+          Publications
+          </a>
+        </li>
+        <li><a href="Projects.html">
+          Projects
+          </a>
+        </li>
+        <li><a href="contactUs.html">
+          Contacts
+          </a></li>
         </ul>
-        <button id="navContact" onclick="window.location.href='contactUs.html'">
-          Contact Us
-        </button>
       </nav>
+    
     </header>
 
     <!-- ---------------------------------------------Image Slideshow--------------------------------------------------------------->
@@ -133,7 +147,8 @@
 
       <div class="animationStabalizer">
         <section class="writeupBlock" id="introduction">
-          <div class="label">Introduction</div>
+          <a href="Introduction.html">
+          <div class="label">About Us</div></a>
           <p class="writeupBlockText">
             <br /><br />An association of students and the Professors, this
             rising society aims at developing a culture of knowledge and growth
@@ -156,7 +171,13 @@
             technology through competitions, workshops, industrial visits and
             invited talks. A general awareness of career and research
             opportunities ahead of the students is harnessed through the
-            society.
+            society....
+           <button
+            class="writeupBlockButtonExploreMore"
+            onclick="window.location.href='Introduction.html'"
+          >
+            view more
+          </button>
             <!-- 
             <br /><br /><br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ab
@@ -186,18 +207,19 @@
             <br /><br /> -->
           </p>
 
-          <button
+          <!--<button
             class="writeupBlockButtonExploreMore"
             onclick="window.location.href='#'"
           >
             ⏩ Explore More ⏩
-          </button>
+          </button>-->
         </section>
 
         <br /><br /><br />
 
-        <section class="writeupBlock aboutUs" id="AboutUs">
-          <div class="label">About Us</div>
+<!--         <section class="writeupBlock aboutUs" id="AboutUs">
+          <a href="AboutUs.html">
+          <div class="label">About Us</div></a>
           <p class="writeupBlockText">
             <br /><br />An association of students and the Professors, this
             rising society aims at developing a culture of knowledge and growth
@@ -220,9 +242,14 @@
             technology through competitions, workshops, industrial visits and
             invited talks. A general awareness of career and research
             opportunities ahead of the students is harnessed through the
-            society.
+            society......<button
+            class="writeupBlockButtonExploreMore"
+            onclick="window.location.href='AboutUs.html'"
+          >
+            view more
+          </button>
             <br /><br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+           <!--- Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
             aliquam nostrum, sit eos libero iste laboriosam sapiente quibusdam
             aut perspiciatis ipsum et voluptatum animi quia dolorum facere vel
             itaque suscipit esse est, cupiditate omnis. Dolorum culpa aliquam
@@ -253,13 +280,14 @@
             onclick="window.location.href='#'"
           >
             ⏩ Explore More ⏩
-          </button>
+          </button>-->
         </section>
 
         <br /><br /><br />
-
-        <section class="writeupBlock" id="Projects">
-          <div class="label">Projects</div>
+ -->
+        <section class="writeupBlock" id="Vision">
+          <a href="vision.html">
+          <div class="label">Vision</div></a>
           <p class="writeupBlockText">
             <br /><br />An association of students and the Professors, this
             rising society aims at developing a culture of knowledge and growth
@@ -282,9 +310,14 @@
             technology through competitions, workshops, industrial visits and
             invited talks. A general awareness of career and research
             opportunities ahead of the students is harnessed through the
-            society.
+            society....<button
+            class="writeupBlockButtonExploreMore"
+            onclick="window.location.href='vision.html'"
+          >
+            view more
+          </button>
             <br /><br /><br />
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ipsa
+            <!--Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ipsa
             aliquid ut earum cum architecto voluptate dolorum eveniet.
             Reprehenderit ipsum est nihil dolorum. Repellendus quasi esse harum
             neque quia, repudiandae molestias numquam unde reprehenderit enim
@@ -316,13 +349,13 @@
             onclick="window.location.href='#'"
           >
             ⏩ Explore More ⏩
-          </button>
+          </button>-->
         </section>
 
         <br /><br /><br />
-
-        <section class="writeupBlock" id="StudentCommunity">
-          <div class="label">Student Community</div>
+<section class="writeupBlock" id="Pwords">
+          <a href="VPWords.html">
+          <div class="label">Words from President</div></a>
           <p class="writeupBlockText">
             <br /><br />An association of students and the Professors, this
             rising society aims at developing a culture of knowledge and growth
@@ -345,9 +378,14 @@
             technology through competitions, workshops, industrial visits and
             invited talks. A general awareness of career and research
             opportunities ahead of the students is harnessed through the
-            society.
+            society.....<button
+            class="writeupBlockButtonExploreMore"
+            onclick="window.location.href='words.html'"
+          >
+            view more
+          </button>
             <br /><br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo optio
+            <!--Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo optio
             ex nisi quo facilis nam explicabo exercitationem, alias reiciendis
             omnis saepe tenetur adipisci aperiam modi similique est culpa porro
             aliquid excepturi voluptatum quisquam voluptatem consectetur! Veniam
@@ -378,12 +416,81 @@
             onclick="window.location.href='#'"
           >
             ⏩ Explore More ⏩
+          </button> -->
+
+        </section>
+      </div>
+    <br><br><br>
+        <section class="writeupBlock" id="Pwords">
+          <a href="Words.html">
+          <div class="label">Words from Vice President</div></a>
+          <p class="writeupBlockText">
+            <br /><br />An association of students and the Professors, this
+            rising society aims at developing a culture of knowledge and growth
+            amongst the members of School of Infrastructure, IIT Bhubaneswar.
+            The society forms a platform for healthy interaction among the
+            faculty and students, thereby enhancing their prospect of learning
+            from the best. <br /><br /><br />
+            The underlying mission is to create dynamic trained professionals to
+            develop innovative and sustainable solutions for the current
+            problems in the field of Civil Engineering.
+            <br /><br /><br />
+            The Patron of the society is the Head of SChool of Infrastructure,
+            Dr. Dinakar Pasla. Society is headed by a President and a
+            Vice-President, who works to ensure a thorough communication between
+            the President and the members of the executive council. The
+            executive council consists of the General secretary, Joint secretary
+            and the secretaries working as a link between students of School of
+            Infrastructure and the society. The society promotes industry-
+            academia collaboration helping students work on a state-of-art
+            technology through competitions, workshops, industrial visits and
+            invited talks. A general awareness of career and research
+            opportunities ahead of the students is harnessed through the
+            society.....<button
+            class="writeupBlockButtonExploreMore"
+            onclick="window.location.href='VPwords.html'"
+          >
+            view more
           </button>
+            <br /><br /><br />
+            <!--Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo optio
+            ex nisi quo facilis nam explicabo exercitationem, alias reiciendis
+            omnis saepe tenetur adipisci aperiam modi similique est culpa porro
+            aliquid excepturi voluptatum quisquam voluptatem consectetur! Veniam
+            eaque officiis at, voluptate harum veritatis nobis! Est harum eaque
+            blanditiis asperiores natus soluta commodi quaerat maxime non
+            eveniet fuga placeat perferendis, ea enim ab dolor, illo ducimus
+            maiores iste, exercitationem corporis sit facilis quas. Quasi totam
+            necessitatibus fuga voluptas, voluptatum sed provident esse
+            dignissimos libero, tempore dolor ipsa unde asperiores reprehenderit
+            officia deserunt temporibus doloribus exercitationem ducimus illum
+            odit. Fuga ipsum ducimus dolor ab ad. Ipsa beatae alias sed, iusto,
+            voluptas deleniti, saepe quis voluptatum odio expedita quae nulla
+            nesciunt nostrum. Totam molestiae hic at, corporis eveniet deleniti
+            inventore porro similique ipsam officia dignissimos, dolorem
+            sapiente obcaecati! Enim, deleniti eveniet provident sequi harum
+            possimus repellat praesentium? Consectetur, neque esse dolore,
+            aperiam ab corrupti provident minus libero aspernatur quod cumque a
+            sed? Ipsa, voluptatibus omnis nobis dolores ratione consequuntur.
+            Deleniti, ut natus? Assumenda, beatae distinctio nulla non facere
+            laboriosam nostrum quos dolore eius, corrupti laborum repellendus
+            accusantium ut nam! Expedita adipisci quia nobis necessitatibus. In
+            repellat minus quos rerum impedit! Nulla, quo pariatur? Labore.
+            <br /><br />
+          </p>
+
+          <button
+            class="writeupBlockButtonExploreMore"
+            onclick="window.location.href='#'"
+          >
+            ⏩ Explore More ⏩
+          </button>-->
+
         </section>
       </div>
     </div>
 
-    <section>Links</section>
+    <!--<section>Links</section>-->
 
     <footer class="footer">
       <div class="footerContainer">
@@ -400,21 +507,21 @@
           <div class="footer-col">
             <h4>IIT Bhubaneswar</h4>
             <ul>
-              <li><a href="#">Main Website</a></li>
-              <li><a href="#">School of Infrastructure</a></li>
-              <li><a href="#">Map</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="https://www.iitbbs.ac.in/" target="blank" >IIT BBS</a></li>
+              <li><a href="https://www.iitbbs.ac.in/Infrastructure-home.php?code=if" target="blank"">School of Infrastructure</a></li>
+              <li><a href="https://goo.gl/maps/dsJjPfS57hmJhQA46" target="blank">Map</a></li>
+              <!-- <li><a href="#"></a></li> -->
+              <!-- <li><a href="#">FAQ</a></li> -->
             </ul>
           </div>
 
           <div class="footer-col">
             <h4>Follow Us</h4>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://m.facebook.com/110035601516317/"><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+              <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
             </div>
           </div>
         </div>

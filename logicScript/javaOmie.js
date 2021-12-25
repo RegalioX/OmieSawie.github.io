@@ -1,5 +1,4 @@
 "use strict";
-
 const slideshowSlide = document.querySelectorAll(".slideshowSlide");
 
 const dot = document.querySelectorAll(".dot");
@@ -87,6 +86,7 @@ observer.observe(document.querySelectorAll(".writeupBlock")[1]);
 observer.observe(document.querySelectorAll(".writeupBlock")[2]);
 observer.observe(document.querySelectorAll(".writeupBlock")[3]);
 observer.observe(document.querySelectorAll(".writeupBlock")[4]);
+
 
 // ---------------------------------------------------------------------------------------------------------------------------
 

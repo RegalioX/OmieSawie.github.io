@@ -1,10 +1,7 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
 html {
   scroll-behavior: smooth;
+  background-color: #d5e0eb;
 }
 
 #loading {
@@ -33,7 +30,7 @@ section {
   margin: 10px;
 }
 
-li,
+/* li,
 a {
   font-size: 16px;
   font-weight: 500;
@@ -84,23 +81,11 @@ header {
   color: yellow;
 }
 
-#navContact {
-  padding: 10px 20px;
-  margin-inline: 20px;
-  background-color: red;
-  color: black;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  box-shadow: 5px 5px 5px #7c827c;
-}
-
 @media (hover: hover) and (pointer: fine) {
   #navContact:hover {
     background-color: orange;
   }
-}
+} */
 
 /* __________________________________________________________________________________________________________________________________________________________ */
 
@@ -118,13 +103,22 @@ header {
 
 .individualContactFlexBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: auto;
   margin: 20px;
-  padding: 5px;
-  border: 10px solid rgb(138, 138, 245);
+  padding: 50px;
+  width: 250px;
+  align-items: center;
+  /* border: 10px solid rgb(138, 138, 245);
   background-color: rgb(173, 196, 230);
-  border-radius: 20px;
+  border-radius: 20px; */
+/*  border-style:solid;
+ border-radius: 1rem;
+  border-width:thick;
+  padding-left: 1rem;
+  padding-right: 1rem; */
+  margin-top: 1.5rem;
+
 }
 
 .writeupBlock-animation {
@@ -141,29 +135,23 @@ header {
   }
 }
 
-/*@media (hover: hover) and (pointer: fine) {
-  .contactSection:hover {
-    transform: translate3d(0px, 10px, 0px);
-    box-shadow: 10px 10px 10px cyan;
-  }
-}*/
 
 .contactInfo {
   font-family: "Roboto";
-  font-size: 1.15em;
+  font-size: 20px;
   background-color: rgb(173, 196, 230);
   padding: 10px;
 }
 
 .profileImage {
-  width: 100px;
-  height: auto;
+  width: 150px;
+  height: 200px;
 }
 
 .label {
   padding: 30px 20px 40px 20px;
   margin: 0px;
-  color: lightblue;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 2em;
   font-weight: bold;
@@ -194,45 +182,16 @@ header {
 
 /* --------------------------------------------------------------------------------------------------------------- */
 
+
+
+
 @media screen and (max-width: 880px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: -188px;
-    z-index: 99999;
-    padding: 10px 5px 0px 5px;
-    margin-inline: 0px;
+  .profileImage{
+    height: 11rem;
+    width: 10rem;
   }
-  #mainLogo {
-    box-shadow: 0px 10px 10px darkblue;
+  .personal_info{
+    font-size: 1.3rem;
   }
-
-  #navLinks {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  #navLinks ul {
-    justify-content: space-between;
-    order: 1;
-    padding-bottom: 20px;
-    box-shadow: 0px 10px 10px darkblue;
-  }
-  #navLinks ul li a {
-    box-shadow: 0px 10px 10px darkblue;
-    margin-inline: 10%;
-  }
-
-  #navContact {
-    margin: 20px auto 20px auto;
-    width: 35%;
-
-    order: 0;
-    box-shadow: 0px 10px 10px darkblue;
-  }
-
-  .label {
-    top: 45px;
-  }
+  
 }

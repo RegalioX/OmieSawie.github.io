@@ -27,22 +27,44 @@ header {
   display: flex;
   justify-content: space-between;
   background: #97caef;
-  /* background: radial-gradient(rgb(212, 210, 224), blue); */
-  /* background: radial-gradient(lightgray,gray); */
   align-items: center;
   padding: 10px 30px 20px 30px;
+  overflow: hidden;
 }
-
+/*.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+}*/
 #mainLogo {
   cursor: pointer;
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
+  padding: 20px;
   /*box-shadow: -5px 5px 5px darkblue;*/
 }
-
+#nametitle{
+  color: rgb(29, 3, 63);
+  font-size: 40px;
+  cursor: pointer;
+  padding:20px ;
+}
 #navLinks {
   list-style: none;
-  display: block;
+  display: inline-block;
 }
 
 #navLinks ul {
@@ -55,19 +77,21 @@ header {
   text-decoration: none;
   padding: 5px 5px;
   margin-inline: 10px;
-  color: lightblue;
+  color: white;
   font-size: 1.2em;
   box-shadow: 3px 3px #7c827c;
   border-radius: 20px;
-  background: blue;
+  background: rgb(2, 2, 99);
 }
 
 #navLinks li a:hover {
-  color: yellow;
+  background: rgb(141, 125, 228);
+  color: black;
+  cursor: pointer;
 }
 
-#navContact {
-  padding: 10px 20px;
+.navButton {
+  /*padding: 10px 20px;
   margin-inline: 20px;
   background-color: red;
   color: black;
@@ -75,7 +99,23 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  box-shadow: 5px 5px 5px #7c827c;
+  box-shadow: 3px 3px #7c827c;*/
+  text-decoration: none;
+  padding: 5px 5px;
+  margin-inline: 10px;
+  color: white;
+  font-size: 1.2em;
+  box-shadow: 0px 3px rgb(93, 88, 100);
+  border-radius: 20px;
+  border-width: 0px;
+  background-color: rgb(2, 2, 99);
+  left: 50%;
+  display: inline-flex;
+}
+.navButton:hover{
+  background: yellow;
+  color: black;
+  cursor: pointer;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -162,45 +202,51 @@ ul {
 /* -----------------------End of Footer------------------------------------------------------------------------------------------------------------ */
 
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1000px) {
   header {
     display: flex;
     flex-direction: column;
-    position: sticky;
-    top: -188px;
     z-index: 99999;
-    padding: 10px 5px 0px 5px;
+    padding: 10px 5px  !important;
     margin-inline: 0px;
   }
   #mainLogo {
     box-shadow: 0px 10px 10px darkblue;
   }
 
-  #navLinks {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  #nametitle{
+    text-align: center;
   }
-  #navLinks ul {
+
+   ul #navLinks{
+    width: 100%; 
     justify-content: space-between;
     order: 1;
-    padding-bottom: 20px;
-    box-shadow: 0px 10px 10px darkblue;
-  }
-  #navLinks ul li a {
-    box-shadow: 0px 10px 10px darkblue;
-    margin-inline: 10%;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    /* box-shadow: 0px 10px 10px darkblue; */
+    margin: 0px;
   }
 
-  #navContact {
-    margin: 20px auto 20px auto;
-    width: 35%;
-
-    order: 0;
-    box-shadow: 0px 10px 10px darkblue;
+  a li{
+    margin: 10px;
   }
+
 
   .label {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .label{
     top: 45px;
   }
+  
+  header{
+    position: sticky;
+    top: -480px;
+  }
+
+
 }
