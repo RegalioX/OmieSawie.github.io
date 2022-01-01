@@ -143,6 +143,15 @@ header {
   padding: 10px;
 }
 
+.contactInfo a{
+color: black;
+}
+
+.contactInfo a:hover{
+  scale: 1.1;
+  color: purple;
+  }
+
 .profileImage {
   width: 150px;
   height: 200px;
